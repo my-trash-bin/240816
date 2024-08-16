@@ -1,0 +1,12 @@
+{
+  "name": "Rust DevContainer",
+  "dockerFile": "Dockerfile",
+  "context": "..",
+  "remoteUser": "root",
+  "postCreateCommand": "cargo build",
+  "shutdownAction": "stopContainer",
+  "workspaceFolder": "/workspace",
+  "mounts": [
+      "source=${localWorkspaceFolder},target=/workspace,type=bind"
+  ]
+}
