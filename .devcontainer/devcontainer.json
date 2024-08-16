@@ -7,6 +7,14 @@
   "shutdownAction": "stopContainer",
   "workspaceFolder": "/workspace",
   "mounts": [
-      "source=${localWorkspaceFolder},target=/workspace,type=bind"
-  ]
+    "source=${localWorkspaceFolder},target=/workspace,type=bind"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rust-lang.rust-analyzer",
+        "editorconfig.editorconfig"
+      ]
+    }
+  }
 }

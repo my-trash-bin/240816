@@ -9,4 +9,4 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /workspace
 
-RUN rustup component add rust-analyzer
+RUN rustup component add rust-analyzer rustfmt
