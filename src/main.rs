@@ -55,10 +55,6 @@ fn main() -> Result<(), Box<dyn Error>> {
 }
 
 fn sample(period_progress: f32) -> f32 {
-    // ((0.9 * (period_progress * 2.0 * PI).sin() + 0.2 * (period_progress * 4.0 * PI).sin()) + 1.0)
-    //     .powi(3)
-    //     / 4.0
-    //     - 1.0
     (period_progress * 2.0 * PI).sin()
 }
 
